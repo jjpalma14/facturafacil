@@ -68,11 +68,12 @@ if($permiso == 0){
                                                   echo "<td>".number_format($item->total_credito)."</td>";
                                                   echo "<td>".number_format($item2->totalpagado)."</td>";
                                                   echo "<td>".number_format($saldo2)."</td>";
-                                                  echo "<td>".$item->fecha_registro."</td>";
+                                                  echo "<td>".date("d-m-Y", strtotime($item->fecha_registro))."</td>";
+                                                  $diastras = date('d-m-Y') - date("d-m-Y", strtotime($item->fecha_registro)) ;
                                                   if($saldo2 <= 0){
                                                       echo "<td><span class='label label-success '>Pagada</span></td>";
                                                   }else{
-                                                     echo "<td><span class='label label-warning '>En mora</span><button type='button' class='form btn btn-info btn-xs tarifa' style='margin-left:5px;'> <span class='glyphicon glyphicon-usd'></span></button></td>";
+                                                     echo "<td><span class='label label-danger '>".$diastras." Dias de mora</span><button type='button' class='form btn btn-info btn-xs tarifa' style='margin-left:5px;'> <span class='glyphicon glyphicon-usd'></span></button></td>";
                                                   }
                                               
                                                  
