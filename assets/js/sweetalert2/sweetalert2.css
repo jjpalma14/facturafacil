@@ -795,22 +795,8 @@
           animation: swal2-animate-error-x-mark 0.5s;
 }
 
-@supports (-ms-accelerator: true) {
-  .swal2-range input {
-    width: 100% !important;
-  }
-  .swal2-range output {
-    display: none;
-  }
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .swal2-range input {
-    width: 100% !important;
-  }
-  .swal2-range output {
-    display: none;
-  }
-}
+
+
 @-moz-document url-prefix() {
   .swal2-close:focus {
     outline: 2px solid rgba(50, 100, 150, 0.4);
