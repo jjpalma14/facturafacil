@@ -1,3 +1,5 @@
+$("#textboton").text("Ingresar");
+$("#icocargando").hide();
 $("#login").click(function () {
     var usuario = $("#user").val();
     var password = $("#password").val();
@@ -10,21 +12,17 @@ $("#login").click(function () {
             password: password
         },
         beforeSend: function (data) {
-         Swal.fire({
-                type: 'info',
-                title: 'Verificando',
-                
-
-            })
-     
-        
+   
+        $("#textboton").text("Validando");
+        $("#icocargando").show();
         },
         success: function (data) {
             
        
             
             if(data == 1){
-                
+             $("#textboton").text("Ingresar");
+             $("#icocargando").hide();
              Swal.fire({
                 type: 'success',
                 title: 'Verificando',
@@ -40,7 +38,8 @@ $("#login").click(function () {
             }
 
          
-
+            $("#textboton").text("Ingresar");
+            $("#icocargando").hide();
             Swal.fire({
                 type: 'error',
                 title: 'Oops...',
