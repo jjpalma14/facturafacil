@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-03-2021 a las 23:19:59
+-- Tiempo de generación: 30-03-2021 a las 00:29:32
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 5.6.40
 
@@ -65,7 +65,8 @@ INSERT INTO `articulos` (`codigo`, `descripcion`, `idcategoria`, `costo_compra`,
 (0029, 'DISCO DURO 500GB - SATA (PORTATIL)', 0002, 1, '2021-03-08 07:40:59', 1047419581, '0000-00-00 00:00:00', 0, 1),
 (0030, 'ADAPTADOR DE CORRIENTE PANTALLA LG', 0012, 30000, '2021-03-11 07:28:20', 1047419581, '0000-00-00 00:00:00', 0, 1),
 (0031, 'Repetidor Wifi', 0013, 1, '2021-03-17 08:52:56', 1047419581, '0000-00-00 00:00:00', 0, 1),
-(0032, 'Memoria Ram DDR3 - 4gb (portatil)', 0001, 1, '2021-03-26 07:55:03', 1047419581, '0000-00-00 00:00:00', 0, 1);
+(0032, 'Memoria Ram DDR3 - 4gb (portatil)', 0001, 1, '2021-03-26 07:55:03', 1047419581, '0000-00-00 00:00:00', 0, 1),
+(0033, 'Procesador i3 3ra Generacion', 0004, 1, '2021-03-29 11:05:28', 1047427112, '0000-00-00 00:00:00', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -111,7 +112,8 @@ INSERT INTO `cargo_servicio` (`idcargo_servicio`, `idcliente`, `tipo`, `descripc
 ('SE0025', 9, 1, 'SE LE HIZO MANTENIMIENTO A NIVEL  DE SOFTARE AL EQUIPO DEL COORDINADOR DE COMPRAS, SE LE DEBE AUMENTAR LA MEMORIA RAM,  YA QUE SOLO CUENTA CON 2GB Y ES INSUFICIENTE PARA EL TRABAJO DIARIO.\n\nSE LE CONFIGURO NUEVO USUARIO DE ACCESO DE WORD OFFICE A LA SRA JENIFER\n\nSE LE CAMBIO SWICTH DE CONEXION AL EQUIPO DE CONTABILIDAD QUE PRESENTABA FALLAS DE CONEXION.\n\n', '2021-03-20', 1047419581, '2021-03-24 10:16:02', 0, 30000, ''),
 ('SE0026', 9, 1, 'SE ATENDIO EL LLAMADO SOBRE PROBEMAS CON EL COMANDERO EN EL AREA DE ZONA 6, SE REVISO Y SE LE RESTAURO EL SISTEMA OPERATIVO, SE DA INDICACIONES PARA INSTALAR UNA IMPRESORA EN RED EN LA COCINA DE ZONA 6, PARA NO TENER QUE DEPENDER DE ESTE COMANDERO, QUE HA VENIDO PRESENTANDO FALLAS EN MULTIPLES OCACIONES.', '2021-03-22', 1047419581, '2021-03-24 10:18:25', 0, 30000, ''),
 ('SE0027', 9, 1, 'SE LE DA SOPORTE REMONTO A LA SRA JANNIER Y SE LE CONFIGURA CONEXION AL SERVIDOR, ADEMAS SE LE CREA USUARIO EN EL APLICATIVO SOFTRESTAURANT.', '2021-03-23', 1047419581, '2021-03-24 10:20:30', 0, 30000, ''),
-('SE0028', 4, 1, 'SE REPARO BOCINAS DEL PORTATIL DELL VOSTRO 3560, LAS CUALES SE ENCONTRABAN ROTAS, ADEMAS SE LE INSTALO MICROSOFT OFFICE 2013 ACTIVADO', '2021-03-25', 1047419581, '2021-03-26 07:49:54', 2, 70000, 'FV0076');
+('SE0028', 4, 1, 'SE REPARO BOCINAS DEL PORTATIL DELL VOSTRO 3560, LAS CUALES SE ENCONTRABAN ROTAS, ADEMAS SE LE INSTALO MICROSOFT OFFICE 2013 ACTIVADO', '2021-03-25', 1047419581, '2021-03-26 07:49:54', 2, 70000, 'FV0076'),
+('SE0029', 9, 1, 'EL DIA DE HOY SE INSTALO IMPRESORA DE RED EN LA COCINA DE ZONA 6, ADEMAS ESTA IMPRESORA DE CONFIGURO TODOS LOS COMANDEROS DE ZONA6,BOKA Y MCOCINA, SE PONCHO DOS PUNTO DE RED PARA PODER INSTALAR LA IMPRESORA YA QUE EN LA COCINA NO CUENTAN CON PUNTOS DE RED.', '2021-03-27', 1047419581, '2021-03-29 07:38:20', 0, 50000, '');
 
 -- --------------------------------------------------------
 
@@ -181,7 +183,8 @@ INSERT INTO `clientes` (`idclientes`, `razonsocial`, `nit`, `direccion`, `telefo
 (8, 'Ventas Facebook', '0002', 'No aplica', 'No aplica', 'No aplica', 1, '2021-02-15 08:43:36', '0000-00-00 00:00:00', 0, 0),
 (9, 'Inversiones M S.A.S.', '900594137-3', 'Bgde Cl 6 3-24', '(+57) 5 6552744', 'inversionesm@gmail.com', 1, '2021-02-22 09:15:41', '2021-02-25 10:17:07', 0, 1047419581),
 (10, 'Jorge Luis Mejia Osorio', '73243305', '0000', '3145264892', 'NO APLICA', 1, '2021-03-08 07:45:09', '2021-03-08 15:16:44', 1047419581, 1047419581),
-(11, 'Dr Luis Carlos Andrade', '0000', 'Barrio Manga', '3183677998', 'andrade@gmail.com', 1, '2021-03-17 08:56:50', '0000-00-00 00:00:00', 1047419581, 0);
+(11, 'Dr Luis Carlos Andrade', '0000', 'Barrio Manga', '3183677998', 'andrade@gmail.com', 1, '2021-03-17 08:56:50', '0000-00-00 00:00:00', 1047419581, 0),
+(12, 'Jorge Ramirez', '111111', 'BARRIO ESCALLON VILLA', '3003668879', 'JRAMIREZ@GMAIL.COM', 1, '2021-03-29 07:33:34', '2021-03-29 07:33:48', 1047419581, 1047419581);
 
 -- --------------------------------------------------------
 
@@ -200,10 +203,10 @@ CREATE TABLE `consecutivos` (
 --
 
 INSERT INTO `consecutivos` (`modulo`, `prefijo`, `consecutivo`) VALUES
-('en_articulo', 'EA', 0081),
-('sa_articulo', 'SA', 0016),
-('ve_articulo', 'FV', 0076),
-('ge_servicio', 'SE', 0028);
+('en_articulo', 'EA', 0083),
+('sa_articulo', 'SA', 0017),
+('ve_articulo', 'FV', 0077),
+('ge_servicio', 'SE', 0029);
 
 -- --------------------------------------------------------
 
@@ -275,7 +278,11 @@ INSERT INTO `entradas` (`identradas`, `tipo`, `proveedor`, `numero_factura`, `fe
 ('EA0078', 02, 6, '', '2021-03-08', 0029, 1, 1, 1, '2021-03-08 07:45:58', 1047419581, 1),
 ('EA0079', 01, 6, '', '2021-03-11', 0030, 1, 30000, 30000, '2021-03-11 07:29:03', 1047419581, 1),
 ('EA0080', 02, 6, '', '2021-03-17', 0031, 1, 1, 1, '2021-03-17 08:53:24', 1047419581, 1),
-('EA0081', 02, 6, '', '2021-03-26', 0032, 1, 1, 1, '2021-03-26 07:56:05', 1047419581, 1);
+('EA0081', 02, 6, '', '2021-03-26', 0032, 1, 1, 1, '2021-03-26 07:56:05', 1047419581, 1),
+('EA0082', 02, 6, '', '2021-03-29', 0013, 1, 1, 1, '2021-03-29 07:31:35', 1047419581, 1),
+('EA0082', 02, 6, '', '2021-03-29', 0032, 2, 1, 2, '2021-03-29 07:31:35', 1047419581, 1),
+('EA0083', 02, 6, '', '2021-03-29', 0025, 1, 1, 1, '2021-03-29 11:05:55', 1047427112, 1),
+('EA0083', 02, 6, '', '2021-03-29', 0033, 1, 1, 1, '2021-03-29 11:05:56', 1047427112, 1);
 
 --
 -- Disparadores `entradas`
@@ -356,7 +363,8 @@ INSERT INTO `modulos` (`idmodulo`, `idmenu`, `modulo`, `estado`, `ruta`) VALUES
 (10, 99, 'Editar Usuarios', 0, 'editarusuario'),
 (11, 99, 'Facturas pendientes por cobrar', 0, 'PagosFacturasCreditos'),
 (12, 04, 'Detallado de ventas', 0, 'detalladoventa'),
-(13, 99, 'Servicios', 0, 'servicios');
+(13, 99, 'Servicios', 0, 'servicios'),
+(14, 99, 'Ventas generadas articulos', 0, 'ventasgeneradasarticulos');
 
 -- --------------------------------------------------------
 
@@ -384,7 +392,8 @@ INSERT INTO `movimientos` (`idmovimientos`, `tipo`, `documento`, `usuario`, `fec
 (7, 'UPDATE', 'SE0027', 1047419581, '2021-03-25 11:07:22'),
 (8, 'UPDATE', 'SE0027', 1047419581, '2021-03-25 11:07:31'),
 (9, 'UPDATE', 'SE0027', 1047419581, '2021-03-25 17:32:57'),
-(10, 'UPDATE', 'SE0027', 1047419581, '2021-03-25 17:39:49');
+(10, 'UPDATE', 'SE0027', 1047419581, '2021-03-25 17:39:49'),
+(11, 'UPDATE', 'SE0029', 1047419581, '2021-03-29 07:42:10');
 
 -- --------------------------------------------------------
 
@@ -511,7 +520,9 @@ INSERT INTO `permisos` (`idpermiso`, `identificacion`, `programa`, `permiso`) VA
 (64, 1047427112, 12, 1),
 (68, 1047419581, 12, 1),
 (69, 1047419581, 13, 1),
-(70, 1047427112, 13, 1);
+(70, 1047427112, 13, 1),
+(71, 1047419581, 14, 1),
+(72, 1047427112, 14, 1);
 
 -- --------------------------------------------------------
 
@@ -585,7 +596,10 @@ INSERT INTO `salidas` (`idsalidas`, `codigo_producto`, `cantidad`, `valor`, `doc
 (21, 0012, 1, 50000, 'SA0016', '2021-02-25', 1047419581, '2021-02-25 11:28:53', '03'),
 (22, 0028, 1, 50000, 'FV0050', '2021-03-08', 1047419581, '2021-03-08 07:46:57', '04'),
 (23, 0029, 1, 30000, 'FV0050', '2021-03-08', 1047419581, '2021-03-08 07:46:57', '04'),
-(26, 0031, 1, 80000, 'FV0073', '2021-03-18', 1047419581, '2021-03-18 11:27:48', '04');
+(26, 0031, 1, 80000, 'FV0073', '2021-03-18', 1047419581, '2021-03-18 11:27:48', '04'),
+(27, 0032, 2, 60000, 'FV0077', '2021-03-29', 1047419581, '2021-03-29 07:34:22', '04'),
+(28, 0013, 1, 30000, 'FV0077', '2021-03-29', 1047419581, '2021-03-29 07:34:22', '04'),
+(29, 0030, 1, 30000, 'SA0017', '2021-03-29', 1047419581, '2021-03-29 11:09:36', '03');
 
 -- --------------------------------------------------------
 
@@ -621,14 +635,14 @@ CREATE TABLE `tarifa_articulo` (
 
 INSERT INTO `tarifa_articulo` (`idtarifa_articulo`, `cod_articulo`, `tarifa_anterior`, `tarifa_actual`, `usuario_registro`, `fecha_registro`, `usuario_modifica`, `fecha_modifica`) VALUES
 (00001, 0012, 150002, 150000, 0, '0000-00-00 00:00:00', 1047419581, '2021-02-26 08:52:19'),
-(00002, 0013, 20000, 80000, 0, '2021-02-15 13:03:21', 0, '2021-02-15 14:11:52'),
+(00002, 0013, 80000, 30000, 0, '2021-02-15 13:03:21', 1047419581, '2021-03-29 07:32:24'),
 (00003, 0018, NULL, 70000, 0, '2021-02-15 13:29:00', 0, '0000-00-00 00:00:00'),
 (00004, 0016, 75000, 50000, 0, '2021-02-15 13:34:27', 0, '2021-02-15 15:23:05'),
 (00005, 0017, 40000, 50000, 0, '2021-02-15 14:17:41', 0, '2021-02-15 14:18:20'),
 (00006, 0015, 0, 85000, 0, '2021-02-15 15:29:11', 0, '0000-00-00 00:00:00'),
 (00007, 0024, 24000, 30000, 0, '2021-02-15 17:13:18', 0, '2021-02-15 17:13:38'),
 (00008, 0023, 0, 20000, 0, '2021-02-16 12:35:44', 0, '0000-00-00 00:00:00'),
-(00009, 0025, 0, 30000, 0, '2021-02-24 08:01:15', 0, '0000-00-00 00:00:00'),
+(00009, 0025, 30000, 100000, 0, '2021-02-24 08:01:15', 1047427112, '2021-03-29 11:06:24'),
 (00010, 0026, 0, 30000, 0, '2021-02-24 08:01:29', 0, '0000-00-00 00:00:00'),
 (00011, 0014, 0, 15000, 1047419581, '2021-02-26 08:51:35', 0, '0000-00-00 00:00:00'),
 (00012, 0020, 0, 20000, 1047419581, '2021-02-26 08:51:46', 0, '0000-00-00 00:00:00'),
@@ -638,7 +652,8 @@ INSERT INTO `tarifa_articulo` (`idtarifa_articulo`, `cod_articulo`, `tarifa_ante
 (00016, 0029, 0, 30000, 1047419581, '2021-03-08 07:42:51', 0, '0000-00-00 00:00:00'),
 (00017, 0030, 0, 70000, 1047419581, '2021-03-11 07:29:45', 0, '0000-00-00 00:00:00'),
 (00018, 0031, 0, 80000, 1047419581, '2021-03-17 08:53:43', 0, '0000-00-00 00:00:00'),
-(00019, 0032, 0, 40000, 1047419581, '2021-03-26 07:56:57', 0, '0000-00-00 00:00:00');
+(00019, 0032, 40000, 30000, 1047419581, '2021-03-26 07:56:57', 1047419581, '2021-03-29 07:32:36'),
+(00020, 0033, 0, 50000, 1047427112, '2021-03-29 11:06:40', 0, '0000-00-00 00:00:00');
 
 --
 -- Disparadores `tarifa_articulo`
@@ -741,7 +756,9 @@ INSERT INTO `ventas` (`idventas`, `factura`, `tipo`, `cliente`, `cod_articulo`, 
 (5, 'FV0042', 2, 8, 0025, 1, 30000, 30000, 0, '2021-02-24 14:15:54'),
 (6, 'FV0050', 2, 10, 0028, 1, 50000, 50000, 1047419581, '2021-02-08 07:46:57'),
 (7, 'FV0050', 2, 10, 0029, 1, 30000, 30000, 1047419581, '2021-03-08 07:46:57'),
-(10, 'FV0073', 2, 11, 0031, 1, 80000, 80000, 1047419581, '2021-03-18 11:27:48');
+(10, 'FV0073', 2, 11, 0031, 1, 80000, 80000, 1047419581, '2021-03-18 11:27:48'),
+(11, 'FV0077', 1, 12, 0032, 2, 30000, 60000, 1047419581, '2021-03-29 07:34:22'),
+(12, 'FV0077', 1, 12, 0013, 1, 30000, 30000, 1047419581, '2021-03-29 07:34:22');
 
 --
 -- Disparadores `ventas`
@@ -967,7 +984,7 @@ ALTER TABLE `ventas_servicio`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `codigo` int(4) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `codigo` int(4) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `categoria`
@@ -979,7 +996,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `idclientes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idclientes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `menuppal`
@@ -991,13 +1008,13 @@ ALTER TABLE `menuppal`
 -- AUTO_INCREMENT de la tabla `modulos`
 --
 ALTER TABLE `modulos`
-  MODIFY `idmodulo` int(2) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `idmodulo` int(2) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `movimientos`
 --
 ALTER TABLE `movimientos`
-  MODIFY `idmovimientos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idmovimientos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `observaciones`
@@ -1015,7 +1032,7 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `permisos`
 --
 ALTER TABLE `permisos`
-  MODIFY `idpermiso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `idpermiso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT de la tabla `proveedores`
@@ -1027,13 +1044,13 @@ ALTER TABLE `proveedores`
 -- AUTO_INCREMENT de la tabla `salidas`
 --
 ALTER TABLE `salidas`
-  MODIFY `idsalidas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `idsalidas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `tarifa_articulo`
 --
 ALTER TABLE `tarifa_articulo`
-  MODIFY `idtarifa_articulo` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `idtarifa_articulo` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_servicio`
@@ -1045,7 +1062,7 @@ ALTER TABLE `tipo_servicio`
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `idventas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idventas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_creditos`
