@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?php echo base_url() . "index.php/controladorventas/vistaventasgeneradas" ?>">
+                    <a href="<?php echo base_url() . "index.php/ventasgeneradasart" ?>">
                         <div class="panel-footer">
                             <span class="pull-left">Detalles</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

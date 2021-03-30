@@ -9,14 +9,7 @@
                 <li class="active">Error</li>
             </ul><!-- /.breadcrumb -->
 
-            <div class="nav-search" id="nav-search">
-                <form class="form-search">
-                    <span class="input-icon">
-                        <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-                        <i class="ace-icon fa fa-search nav-search-icon"></i>
-                    </span>
-                </form>
-            </div><!-- /.nav-search -->
+
         </div>
 
         <div class="page-content">
@@ -44,24 +37,14 @@
                                 <form class="form-search">
                                     <span class="input-icon align-middle">
                                         <i class="ace-icon fa fa-search"></i>
-
-                                        <input type="text" class="search-query" placeholder="Give it a search...">
+                                        <input type="text" class="search-query" placeholder="Introduzca modulo a buscar" style="width: 300px;" id="txtbusqueda">
                                     </span>
-                                    <button class="btn btn-sm" type="button">Go!</button>
+                                    <button class="btn btn-sm" type="button" id="BtnBuscar">Consultar</button>
                                 </form>
 
                                 <div class="space"></div>
-                                <h4 class="smaller">Prueba con esto:</h4>
-
-                                <ul class="list-unstyled spaced inline bigger-110 margin-15">
-                                    <li>
-                                        <i class="ace-icon fa fa-hand-o-right blue"></i>
-                                         Vuelva a comprobar la URL en busca de errores tipográficos
-                                    </li>
-
-                                </ul>
                             </div>
-
+                            <div id="contenido"></div>
                             <hr>
                             <div class="space"></div>
 
@@ -87,6 +70,7 @@
         </div><!-- /.page-content -->
     </div>
 </div><!-- /.main-content -->
-
+<script src="<?php echo base_url() . "assets/" ?>js/jquery-2.1.4.min.js"></script>
+<script src="<?php echo base_url() . "assets/" ?>js/busqueda.js"></script>
 
 

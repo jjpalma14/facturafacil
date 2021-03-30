@@ -85,7 +85,7 @@ if(empty($_SESSION['login_user']))
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="<?php echo base_url()?>" class="navbar-brand">
+					<a href="#" class="navbar-brand">
 						<small>
                                                     <img src="<?php echo base_url()?>/assets/images/jpc.jpg" width="25" height="25">
 							FacturaFacil

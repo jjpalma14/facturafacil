@@ -71,6 +71,4 @@ $route['errorpermisos'] = 'ErrorPermisos';
 $route['detalladoventa'] = 'ControladorDetalleVenta';
 $route['RepDetalleVenta'] = 'Reportes';
 $route['servicios'] = 'ControladorServicios';
-
-
-
+$route['ventasgeneradasart'] = 'controladorventas/vistaventasgeneradas';
